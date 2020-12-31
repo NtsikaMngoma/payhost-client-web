@@ -1,0 +1,45 @@
+<html>
+
+<head>
+	<title>PayHost | Client</title>
+</head>
+
+<body>
+	<h1>PayHost - Client</h1>
+	<p> 
+        <!-- Making a text input -->
+        <input type="text" id="password" placeholder="password"> 
+        <input type="text" id="payGateId" placeholder="PayGateId"> 
+		  
+		<input type="text" id="cardExpiryDate" placeholder="cardExpiryDate"/>
+		<input type="text" id="cardNumber" placeholder="cardNumber"/>
+		
+		<input type="email" id="email" placeholder="Email"/>
+		<input type="name" id="firstName" placeholder="firstName"/>
+		<input type="text" id="idNumber" placeholder="Id Number"/>
+
+		<input type="name" id="lastName" placeholder="lastName"/>
+		<input type="text" id="title" placeholder="title"/>
+		<input type="text" id="mobile" placeholder="Mobile Number"/>
+		
+		<input type="number" id="cvv" placeholder="cvv" />
+		<input type="url" id="notifyUrl" placeholder="notifyUrl" />
+		<input type="url" id="returnUrl" placeholder="returnUrl"/>
+
+		<input type="text" id="merchantOrderId" placeholder="orderId">
+		<input type="text" id="currency" placeholder="currency"/>
+		<input type="text" id="amount" placeholder="amount"/>
+		<input type="date" id="transactionDate" placeholder="transactionDate"/>
+        <!-- Button to send data -->
+        <button onclick="sendJSON()">Send JSON</button> 
+  
+      <!-- For printing result from server -->
+      <p class="result" style="color:green"></p> 
+      
+   </p> 
+  
+  <!-- Include the JavaScript file -->
+  <script src="index.js"></script> 
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+{
+    "cardPaymentRequest": {
+        "account": {
+            "password": test.value,
+            "payGateId": payGateId.value
+        },
+        "cardExpiryDate": cardExpiryDate.value,
+        "cardNumber": cardNumber.value,
+        "customer": {
+            "email": [
+                email.value
+            ],
+            "firstName": firstName.value,
+            "idNumber": idNumber.value,
+            "lastName": lastName.value,
+            "mobile": [
+                mobile.value
+            ],
+            "title": title.value
+        },
+        "cvv": cvv.value,
+        "redirect": {
+            "notifyUrl": "http://localhost:8082/v1/payment/notify",
+            "returnUrl": "http://localhost:8082/v1/payment/return"
+        },
+        "order": {
+            "merchantOrderId": "string",
+            "currency": "ZAR",
+            "amount": amount.value,
+            "transactionDate": transactionDate.value
+        }
+    }
+}
